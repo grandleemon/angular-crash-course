@@ -1,0 +1,9 @@
+<div class="py-4 px-6 border rounded flex flex-col items-center my-2">
+  <div class="w-[80px] mr-4">
+    <img [src]="product.image" class="w-full h-full" [alt]="product.title">
+  </div>
+  <h2 class="my-2 text-lg text-center">{{ product.title }}</h2>
+  <p>Price: <span class="font-bold">{{ product.price | currency: 'MDL' }}</span></p>
+  <p>{{ product.description }}</p>
+  <p>Rate: {{ product.rating.rate }}</p>
+</div>
