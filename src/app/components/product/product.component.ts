@@ -8,4 +8,6 @@ import {IProduct} from "../../models/product";
 })
 export class ProductComponent {
   @Input() product: IProduct
+
+  details = false
 }
