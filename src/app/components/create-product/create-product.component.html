@@ -1,0 +1,12 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input type="text"
+         class="border w-full py-2 px-4 mb-2"
+         placeholder="Product name"
+         formControlName="title"
+         appFocus
+  />
+
+  <p class="text-red-500 font-medium mb-2" *ngIf="title.errors?.minlength && title.touched">Title should have more than 5 characters</p>
+
+  <button class="bg-blue-600 text-white py-2 px-4" type="submit">Create</button>
+</form>
